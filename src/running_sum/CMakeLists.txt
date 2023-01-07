@@ -1,0 +1,3 @@
+
+add_executable(running_sum running_sum.cc)
+target_link_libraries(running_sum PUBLIC compile_config)
