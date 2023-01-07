@@ -1,21 +1,17 @@
 #include <iostream>
 #include <vector>
+#include <assert.h>
 
 using namespace std;
 
 class Solution{
 public:
     vector<int> running_sum(vector<int> &nums){
-        vector<int> res = {};
         int size_nums = nums.size();
-        for (int i; i<size_nums; i++)
-        {
-            if (i == 0)
-                res.push_back(nums[i]);
-            else
-                res.push_back(nums[i] + res[i-1]);
-        }
-        return res;
+        assert(size_nums > 0);
+        for (int i = 1; i<size_nums; i++)
+            nums[i] += nums[i - 1];
+        return nums;
     }
 };
 
