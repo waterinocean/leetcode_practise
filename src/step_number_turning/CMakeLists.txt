@@ -1,0 +1,3 @@
+
+add_executable(step_number_turning_zero step_number_turning_zero.cc)
+target_link_libraries(step_number_turning_zero PUBLIC compile_config)

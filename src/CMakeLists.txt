@@ -7,3 +7,4 @@ target_compile_options(compile_config INTERFACE
 
 
 add_subdirectory(running_sum)
+add_subdirectory(step_number_turning)
