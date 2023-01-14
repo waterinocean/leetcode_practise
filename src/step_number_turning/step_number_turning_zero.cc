@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -52,12 +53,16 @@ int main(int argc, char *argv[])
 
     //compute and print steps
     Solution s = Solution();
-    for (int i = 0; i < argc - 1; i++)
-    {
-        int num_in = steps[i];
-        int num_step = s.numberOfSteps(num_in);
-        cout << num_in << "\thas\t" << num_step << "\tsteps to turn into 0" << endl;
-    }
+    for_each(steps.begin(), steps.end(), [&](int c){
+        cout << c << "\thas\t" << s.numberOfSteps(c) << "\tsteps to turn into 0" << endl;
+    });
+
+    // for (int i = 0; i < argc - 1; i++)
+    // {
+    //     int num_in = steps[i];
+    //     int num_step = s.numberOfSteps(num_in);
+    //     cout << num_in << "\thas\t" << num_step << "\tsteps to turn into 0" << endl;
+    // }
     
     return 0;
 }
