@@ -1,0 +1,3 @@
+
+add_executable(middle_node middle_node.cc)
+target_link_libraries(middle_node PUBLIC compile_config)
