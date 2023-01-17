@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "middle_node",
+            "name": "check_str_construct",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/src/middle_node/middle_node",
-            "args": ["6"],
-            "stopAtEntry": true,
+            "program": "${workspaceFolder}/build/src/check_str_construct/check_str_construct",
+            "args": ["a", "b"],
+            "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,

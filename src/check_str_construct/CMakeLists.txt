@@ -1,0 +1,3 @@
+
+add_executable(check_str_construct check_str_construct.cc)
+target_link_libraries(check_str_construct PUBLIC compile_config)
