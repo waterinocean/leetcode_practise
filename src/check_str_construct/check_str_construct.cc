@@ -9,7 +9,7 @@ public:
         bool ans = true;
         for (auto c : ransomNote)
         {
-            size_t index = ransomNote.find(c);
+            size_t index = magazine.find(c);
             if (magazine == "" || index == string::npos){
                 ans = false;
                 break;
